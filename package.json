@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "a small convenience function for allowing explicitly null props with the prop-types package",
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "lint": "eslint --format codeframe --ext mjs,js .",
     "test": "jest && npm run lint",
