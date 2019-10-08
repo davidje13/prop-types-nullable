@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/davidje13/prop-types-nullable#readme",
   "devDependencies": {
-    "eslint": "^6.1.0",
-    "eslint-plugin-jest": "^22.14.1",
-    "eslint-plugin-node": "^9.1.0",
-    "jest": "^24.8.0",
+    "eslint": "^6.5.1",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-node": "^10.0.0",
+    "jest": "^24.9.0",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
