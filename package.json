@@ -18,7 +18,10 @@
     "type": "git",
     "url": "git+https://github.com/davidje13/prop-types-nullable.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "prop-types"
+  ],
   "author": "David Evans",
   "license": "MIT",
   "bugs": {
