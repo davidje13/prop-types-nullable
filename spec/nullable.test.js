@@ -13,17 +13,17 @@ describe('nullable.isRequired', () => {
 
   it('allows values which match given subcriteria', () => {
     check(condition, {myProp: 'valid'});
-    expect(getStderr()).toEqual('');
+    expect(getStderr()).equals('');
   });
 
   it('allows explicitly null values', () => {
     check(condition, {myProp: null});
-    expect(getStderr()).toEqual('');
+    expect(getStderr()).equals('');
   });
 
   it('rejects undefined values', () => {
     check(condition, {myProp: undefined});
-    expect(getStderr()).toEqual(
+    expect(getStderr()).equals(
       'Warning: Failed property type: The property `myProp` is marked as ' +
       'required in `test condition`, but its value is `undefined`.\n'
     );
@@ -31,7 +31,7 @@ describe('nullable.isRequired', () => {
 
   it('rejects missing values', () => {
     check(condition, {});
-    expect(getStderr()).toEqual(
+    expect(getStderr()).equals(
       'Warning: Failed property type: The property `myProp` is marked as ' +
       'required in `test condition`, but its value is `undefined`.\n'
     );
@@ -39,7 +39,7 @@ describe('nullable.isRequired', () => {
 
   it('propagates rejections from subcriteria', () => {
     check(condition, {myProp: 3});
-    expect(getStderr()).toEqual(
+    expect(getStderr()).equals(
       'Warning: Failed property type: Invalid property `myProp` of type ' +
       '`number` supplied to `test condition`, expected `string`.\n'
     );
@@ -53,27 +53,27 @@ describe('nullable', () => {
 
   it('allows values which match given subcriteria', () => {
     check(condition, {myProp: 'valid'});
-    expect(getStderr()).toEqual('');
+    expect(getStderr()).equals('');
   });
 
   it('allows explicitly null values', () => {
     check(condition, {myProp: null});
-    expect(getStderr()).toEqual('');
+    expect(getStderr()).equals('');
   });
 
   it('allows undefined values', () => {
     check(condition, {myProp: undefined});
-    expect(getStderr()).toEqual('');
+    expect(getStderr()).equals('');
   });
 
   it('allows missing values', () => {
     check(condition, {});
-    expect(getStderr()).toEqual('');
+    expect(getStderr()).equals('');
   });
 
   it('propagates rejections from subcriteria', () => {
     check(condition, {myProp: 3});
-    expect(getStderr()).toEqual(
+    expect(getStderr()).equals(
       'Warning: Failed property type: Invalid property `myProp` of type ' +
       '`number` supplied to `test condition`, expected `string`.\n'
     );
