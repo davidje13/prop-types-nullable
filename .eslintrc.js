@@ -5,7 +5,6 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:node/recommended',
-    'plugin:jest/recommended',
   ],
   rules: {
     'accessor-pairs': ['error'],
@@ -175,4 +174,10 @@ module.exports = {
     'yield-star-spacing': ['error'],
     'yoda': ['error'],
   },
+  overrides: [{
+    files: ['**/*.test.*'],
+    rules: {
+      'no-undef': ['off'],
+    },
+  }],
 };

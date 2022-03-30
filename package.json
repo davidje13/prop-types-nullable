@@ -9,10 +9,9 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "lint": "eslint --format codeframe --ext mjs,js .",
-    "test": "jest",
-    "posttest": "npm run lint",
-    "test:watch": "jest --watch"
+    "lint": "eslint --ext mjs,js .",
+    "test": "lean-test",
+    "posttest": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -29,10 +28,9 @@
   },
   "homepage": "https://github.com/davidje13/prop-types-nullable#readme",
   "devDependencies": {
-    "eslint": "7.x",
-    "eslint-plugin-jest": "24.x",
+    "eslint": "8.x",
     "eslint-plugin-node": "11.x",
-    "jest": "26.x",
+    "lean-test": "1.x",
     "prop-types": "15.x"
   },
   "peerDependencies": {
