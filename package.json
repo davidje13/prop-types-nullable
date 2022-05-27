@@ -30,7 +30,7 @@
   "devDependencies": {
     "eslint": "8.x",
     "eslint-plugin-node": "11.x",
-    "lean-test": "1.x",
+    "lean-test": "2.x",
     "prop-types": "15.x"
   },
   "peerDependencies": {
